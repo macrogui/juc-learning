@@ -22,6 +22,9 @@ public class Sequence {
     }
 }
 
+/**
+ * 利用condition使用唤醒，等待的操作
+ */
 class Data{
     private Lock lock = new ReentrantLock();
     private Condition condition1 = lock.newCondition();
